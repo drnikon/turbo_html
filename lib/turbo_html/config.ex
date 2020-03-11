@@ -2,7 +2,7 @@ defmodule Turbo.HTML.Config do
   @moduledoc false
 
   def view_style(application \\ :turbo_html) do
-    config(:view_style, :bootstrap, application)
+    config(:view_style, :uikit, application)
   end
 
   defp config(application) do
