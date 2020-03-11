@@ -5,10 +5,10 @@ defmodule Turbo.HTML.Views.PaginateView do
 
   @default_opts [
     max_page_links: 10,
-    previous_label: "<<",
-    first_label: "First",
-    next_label: ">>",
-    last_label: "Last"
+    previous_label: Phoenix.HTML.raw("<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\" data-svg=\"chevron-left\"><polyline fill=\"none\" stroke=\"#000\" stroke-width=\"1.03\" points=\"13 16 7 10 13 4\"></polyline></svg>"),
+    first_label: Phoenix.HTML.raw("<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\" data-svg=\"chevron-double-left\"><polyline fill=\"none\" stroke=\"#000\" stroke-width=\"1.03\" points=\"10 14 6 10 10 6\"></polyline><polyline fill=\"none\" stroke=\"#000\" stroke-width=\"1.03\" points=\"14 14 10 10 14 6\"></polyline></svg>"),
+    next_label: Phoenix.HTML.raw("<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\" data-svg=\"chevron-right\"><polyline fill=\"none\" stroke=\"#000\" stroke-width=\"1.03\" points=\"7 4 13 10 7 16\"></polyline></svg>"),
+    last_label: Phoenix.HTML.raw("<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\" data-svg=\"chevron-double-right\"><polyline fill=\"none\" stroke=\"#000\" stroke-width=\"1.03\" points=\"10 6 14 10 10 14\"></polyline><polyline fill=\"none\" stroke=\"#000\" stroke-width=\"1.03\" points=\"6 6 10 10 6 14\"></polyline></svg>")
   ]
 
   @doc """
